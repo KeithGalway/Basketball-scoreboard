@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Basketball Scorecard</title>
+        <link rel="icon" href="favicon" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="box" id="score1-box">
+                <h3 class="box__heading">Home</h3>
+                <h2 id="score1">0</h2>
+                <div class="points">
+                    <button class="point" onclick="incrementBy1('home')">+1</button>
+                    <button class="point" onclick="incrementBy2('home')">+2</button>
+                    <button class="point" onclick="incrementBy3('home')">+3</button>
+                </div>
+            </div>
+            <div class="box" id="score2-box">
+                <h3 class="box__heading">Guest</h3>
+                <h2 id="score2">0</h2>
+                <div class="points">
+                    <button class="point" onclick="incrementBy1('guest')">+1</button>
+                    <button class="point" onclick="incrementBy2('guest')">+2</button>
+                    <button class="point" onclick="incrementBy3('guest')">+3</button>
+                </div>
+            </div>
+            <div class="box" id="stopwatch">
+                <h3 id="displayTime">12:00</h3>
+                <div class="buttons">
+                    <button id="start-btn" onclick="clockStart()">Start</button>
+                    <button id="stop-btn" onclick="clockStop()">Stop</button>
+                    <button id="reset-btn" onclick="clockReset()">Reset</button>
+                </div>
+            </div>
+         </div>
+        <script src="index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,116 @@
+@font-face{
+    font-family: cursedTimer;
+    src: url(cursedTimer.ttf)
+}
+
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* STYLES */
+
+body {
+    background-image: url(./assets/basketballCourt.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    width: 650px;
+    margin: 40px auto;
+    padding: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #1b244a;
+    border: 7.5px ridge #707070;
+    border-radius: 20px;
+}
+
+#score2-box {
+    order: 3;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box__heading {
+    padding: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5em;
+    color: white;
+    text-transform: uppercase;
+}
+
+#score1,
+#score2 {
+    padding: 20px 40px 5px 40px;
+    font-family: cursedTimer;
+    font-size: 5em;
+    color: #F94F6D;
+    background-color: black;
+    border: 1px solid #707070;
+    border-radius: 10px;
+}
+
+.points {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 15px;
+    
+}
+
+.point {
+    padding: 7.5px;
+    font-family: cursedTimer;
+    background-color: #1b244a;
+    color: #9aabd8;
+    border: 2px solid #9aabd8;
+    border-radius: 5px;
+}
+
+.point:hover {
+    box-shadow: 0 0 5px salmon; 
+    border-color: #F94F6D;
+    color: whitesmoke;
+    transform: scale(1.2);
+}
+
+/* STOPWATCH */
+
+#stopwatch {
+    display: flex;
+    align-content: center;
+    align-self: center;
+}
+
+#displayTime {
+    padding: 0px 20px 10px 0px;
+    font-family: cursedTimer;
+    font-size: 3em;
+}
+
+#start-btn,
+#stop-btn,
+#reset-btn {
+    padding: 3px;
+    color: whitesmoke;
+    background-color: black;
+    font-size: 0.65em;
+    text-transform: uppercase;
+    border: 1px solid #9aabd8;
+    border-radius: 5px;
+}
+
+#start-btn:hover,
+#stop-btn:hover,
+#reset-btn:hover {
+    box-shadow: 0 0 5px whitesmoke;
+}
